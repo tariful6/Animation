@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+            <a href="#"
+                class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">From
+                To</a>
+            <a href="./aniOne.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Timeline</a>
+
+            <a href="./aniTwo.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Scroll</a>
+
+            <a href="./aniThree.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Other</a>
+        </div>
+    </nav>
+
+    <section class=" container mx-auto">
+        <div class=" w-1/3 mx-auto border-b border-red-400">
+            <h6 class="  text-center text-4xl font-bold py-3">From To Animation</h6>
+        </div>
+
+        <!-- start animation  from here-->
+        <div class=" my-3">
+            <div id="box1" class=" h-40 w-40 bg-red-400"></div>
+            <div id="box2" class=" h-40 w-40 bg-green-400"></div>
+        </div>
+
+        <div class=" grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="fromSec">
+                <h1 class=" text-3xl font-bold">Animation use here - from</h1>
+                <h1 class=" text-3xl font-bold">Animation use here - from</h1>
+                <h1 class=" text-3xl font-bold">Animation use here - from</h1>
+            </div>
+            <div class="toSec">
+                <h2 class=" text-3xl font-bold text-green-500">Animation use here - to</h2>
+                <h2 class=" text-3xl font-bold text-green-500">Animation use here - to</h2>
+                <h2 class=" text-3xl font-bold text-green-500">Animation use here - to</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

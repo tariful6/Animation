@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet">
+    <!-- this css only for text animation -->
+    <style>
+        #text-animate h3 span {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body id="cursorArea" class="overflow-x-hidden">
+    <nav id="cursorPlace" class="bg-white shadow dark:bg-gray-800">
+        <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+            <a href="./index.html"
+                class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">From
+                To</a>
+
+            <a href="./aniOne.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Timeline</a>
+
+            <a href="./aniTwo.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Scroll</a>
+
+            <a href="./aniThree.html"
+                class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Other</a>
+        </div>
+    </nav>
+
+    <section class=" h-screen bg-[#151414] ">
+        <h2 class=" text-3xl text-white text-center py-6 font-bold uppercase">Svg Curve Animation</h2>
+        <div id="string" class=" w-[1000px] mx-auto">
+            <svg width="1000" height="300">
+                <path d="M 10 100 Q 500 100 990 100" stroke="white" fill="transparent" />
+            </svg>
+        </div>
+    </section>
+    <!-- custom cursor -->
+    <div id="cursor"
+        class=" bg-red-600 h-6 w-6 rounded-full fixed text-[5px] flex justify-center top-0 items-center text-center z-20 px-1 text-white opacity-0">
+    </div>
+    <section id="" class=" h-screen bg-green-600 flex items-center justify-center">
+        <div id="image" class=" w-4/12 h-72 relative ">
+            <div id="overlay" class=" bg-transparent h-full w-full absolute z-30"></div>
+            <img class=" h-full w-full object-cover" src="./img/image.jpg" alt="">
+        </div>
+    </section>
+    <!--gsap Navbar  -->
+    <section
+        class=" h-screen bg-[url('https://t3.ftcdn.net/jpg/01/90/18/20/360_F_190182089_kVJgPPov9cI0AJ84CdCVqVxx2a57928j.jpg')] bg-cover bg-no-repeat w-full relative ">
+
+        <div id="nav" class="flex items-center justify-between px-12 py-9 ">
+            <h2 class=" text-3xl">Tariful</h2>
+            <i class="ri-menu-line text-3xl font-bold cursor-pointer"></i>
+        </div>
+
+        <div id="nav-menu"
+            class="h-full w-[40%] absolute top-0 -right-[40%] bg-[#ffffff1b] backdrop-blur-xl px-9 py-16">
+            <h4 class="text-2xl mb-2 font-bold">Work</h4>
+            <h4 class="text-2xl mb-2 font-bold">About</h4>
+            <h4 class="text-2xl mb-2 font-bold">Courses</h4>
+            <h4 class="text-2xl mb-2 font-bold">Services</h4>
+            <h4 class="text-2xl mb-2 font-bold">Contract US</h4>
+            <i
+                class="ri-close-line absolute top-6 right-4 bg-white rounded-full px-3 py-2 font-bold cursor-pointer"></i>
+        </div>
+    </section>
+    <!-- text animation  -->
+    <section class=" h-screen w-full bg-purple-300">
+        <div id="text-animate" class=" h-full w-full flex justify-center items-center">
+            <h3 class="text-9xl font-bold text-white uppercase  overflow-hidden ">Tariful</h3>
+        </div>
+    </section>
+
+    <!-- window mouse wheel animation -->
+    <section id="page7" class=" bg-black h-screen w-full flex items-center justify-center">
+        <div id="move" class=" bg-green-400 flex py-3">
+
+            <div class="marque flex gap-6 items-center px-8 shrink-0 translate-x-[-100%]">
+                <h4 class=" uppercase text-4xl font-bold">Thrive beyond limits</h4>
+                <img class=" h-30" src="./img/right.png" alt="">
+            </div>
+            <div class="marque flex gap-6 items-center px-8 shrink-0 translate-x-[-100%]">
+                <h4 class=" uppercase text-4xl font-bold">Thrive beyond limits</h4>
+                <img class=" h-30" src="./img/right.png" alt="">
+            </div>
+            <div class="marque flex gap-6 items-center px-8 shrink-0 translate-x-[-100%]">
+                <h4 class=" uppercase text-4xl font-bold">Thrive beyond limits</h4>
+                <img class=" h-30" src="./img/right.png" alt="">
+            </div>
+            <div class="marque flex gap-6 items-center px-8 shrink-0 translate-x-[-100%]">
+                <h4 class=" uppercase text-4xl font-bold">Thrive beyond limits</h4>
+                <img class=" h-30" src="./img/right.png" alt="">
+            </div>
+            <div class="marque flex gap-6 items-center px-8 shrink-0 translate-x-[-100%]">
+                <h4 class=" uppercase text-4xl font-bold">Thrive beyond limits</h4>
+                <img class=" h-30" src="./img/right.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- M 10 80 Q 95 10 180 80 -->
+<!-- M 10 80  ==> X Y -- Starting point -->
+<!-- Q 95 10  ==> X Y -- Center point -->
+<!-- 180 80  ==> X Y -- End point -->
